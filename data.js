@@ -15,7 +15,7 @@ const dataKuliner = {
       deskripsi: "Disajikan dengan tauco khas yang gurih.",
       lokasi: "Bogor Tengah",
       harga: "Rp15.000",
-      gambar: "https://source.unsplash.com/800x500/?noodles",
+      gambar: "apa.jpg",
       kategori: "rekomendasi"
     },
     {
@@ -24,7 +24,7 @@ const dataKuliner = {
       deskripsi: "Lontong dengan saus kacang khas.",
       lokasi: "Jl. Raya Bogor",
       harga: "Rp12.000",
-      gambar: "https://source.unsplash.com/800x500/?indonesian-food",
+      gambar: "lapis.jpg",
       kategori: "rekomendasi"
     }
   ],
@@ -36,7 +36,7 @@ const dataKuliner = {
       deskripsi: "Minuman segar khas Bogor.",
       lokasi: "Pasar Bogor",
       harga: "Rp8.000",
-      gambar: "https://source.unsplash.com/800x500/?drink",
+      gambar: "apa.jpg",
       kategori: "viral"
     },
     {
@@ -45,7 +45,7 @@ const dataKuliner = {
       deskripsi: "Minuman rempah tradisional.",
       lokasi: "Sekitar Bogor",
       harga: "Rp10.000",
-      gambar: "https://source.unsplash.com/800x500/?tea",
+      gambar: "cimol.jpg",
       kategori: "rekomendasi"
     }
   ]
