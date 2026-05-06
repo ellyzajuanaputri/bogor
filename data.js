@@ -44,7 +44,7 @@ const dataKuliner = {
       harga: "Rp15.000",
       gambar: "apa.jpg",
       kategori: "rekomendasi"
-    },
+    }
   ],
 
   minuman: [
