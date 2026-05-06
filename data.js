@@ -35,15 +35,6 @@ const dataKuliner = {
       harga: "Rp25.000",
       gambar: "apa.jpg",
       kategori: "rekomendasi"
-    },
-     {
-      id: "toge",
-      nama: "Toge Goreng",
-      deskripsi: "Disajikan dengan tauco khas yang gurih.",
-      lokasi: "Bogor Tengah",
-      harga: "Rp15.000",
-      gambar: "apa.jpg",
-      kategori: "rekomendasi"
     }
   ],
 
