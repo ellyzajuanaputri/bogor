@@ -26,7 +26,25 @@ const dataKuliner = {
       harga: "Rp12.000",
       gambar: "lapis.jpg",
       kategori: "rekomendasi"
-    }
+    },
+     {
+      id: "soto",
+      nama: "Soto Mie Bogor",
+      deskripsi: "Soto dengan isi mi kuning, risol goreng, kikil, dan daging dengan kuah gurih.",
+      lokasi: "Bogor Tengah",
+      harga: "Rp25.000",
+      gambar: "apa.jpg",
+      kategori: "rekomendasi"
+    },
+     {
+      id: "toge",
+      nama: "Toge Goreng",
+      deskripsi: "Disajikan dengan tauco khas yang gurih.",
+      lokasi: "Bogor Tengah",
+      harga: "Rp15.000",
+      gambar: "apa.jpg",
+      kategori: "rekomendasi"
+    },
   ],
 
   minuman: [
