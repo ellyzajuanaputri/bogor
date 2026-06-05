@@ -45,6 +45,7 @@ body {
 .navbar h2 {
   font-size: 24px;
   letter-spacing: 1px;
+  color: var(--green-main);
 }
 
 .navbar a {
