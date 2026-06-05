@@ -217,9 +217,12 @@ body {
 }
 
 .item img {
-  width: 100%;
+  width: 300px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
   border-radius: 14px;
   margin-bottom: 15px;
+  display: block;
 }
 
 .item h2 {
