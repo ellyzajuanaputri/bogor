@@ -121,71 +121,40 @@ Logout
 
 </div>
 
+<script src="data.js"></script>
+
 <script>
 
+console.log("Script jalan");
+
 if(!sessionStorage.getItem("login")){
-
-location.href="admin-login.html";
-
+    location.href="admin-login.html";
 }
 
 function logout(){
-
-sessionStorage.clear();
-
-location.href="admin-login.html";
-
+    sessionStorage.clear();
+    location.href="admin-login.html";
 }
 
-function tampilData(){
+const db = JSON.parse(localStorage.getItem("dataKuliner"));
 
-const db=JSON.parse(localStorage.getItem("dataKuliner"));
+console.log(db);
 
-let semua=[
+if(db){
 
+let semua = [
 ...db.makanan,
-
 ...db.minuman
-
 ];
 
-let html="";
+console.log(semua);
 
-semua.forEach((item,index)=>{
+}else{
 
-html+=`
-
-<tr>
-
-<td>${index+1}</td>
-
-<td>${item.nama}</td>
-
-<td>${item.kategori}</td>
-
-<td>${item.harga}</td>
-
-<td>
-
-<button>Edit</button>
-
-<button>Hapus</button>
-
-</td>
-
-</tr>
-
-`;
-
-});
-
-document.getElementById("tabelData").innerHTML=html;
+alert("Database kosong");
 
 }
 
-tampilData();
-
 </script>
-
 </body>
 </html>
