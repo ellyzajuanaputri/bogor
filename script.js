@@ -1,7 +1,10 @@
-// ambil semua data
+// Ambil database dari LocalStorage
+const db = JSON.parse(localStorage.getItem("dataKuliner"));
+
+// Gabungkan semua data
 const semuaData = [
-  ...dataKuliner.makanan,
-  ...dataKuliner.minuman
+    ...db.makanan,
+    ...db.minuman
 ];
 
 // filter kategori
