@@ -1,20 +1,191 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
 <meta charset="UTF-8">
 <title>Dashboard Admin</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+.dashboard{
+
+max-width:1200px;
+
+margin:40px auto;
+
+}
+
+.top{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+button{
+
+padding:10px 20px;
+
+border:none;
+
+background:#7FB77E;
+
+color:white;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+}
+
+th,td{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+text-align:left;
+
+}
+
+th{
+
+background:#7FB77E;
+
+color:white;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1 style="text-align:center;margin-top:40px;">
-Dashboard Admin
-</h1>
+<div class="dashboard">
 
-<p style="text-align:center;">
-Login berhasil 🎉
-</p>
+<div class="top">
+
+<h1>Dashboard Admin</h1>
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>No</th>
+
+<th>Nama</th>
+
+<th>Kategori</th>
+
+<th>Harga</th>
+
+<th>Aksi</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tabelData">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script>
+
+if(!sessionStorage.getItem("login")){
+
+location.href="admin-login.html";
+
+}
+
+function logout(){
+
+sessionStorage.clear();
+
+location.href="admin-login.html";
+
+}
+
+function tampilData(){
+
+const db=JSON.parse(localStorage.getItem("dataKuliner"));
+
+let semua=[
+
+...db.makanan,
+
+...db.minuman
+
+];
+
+let html="";
+
+semua.forEach((item,index)=>{
+
+html+=`
+
+<tr>
+
+<td>${index+1}</td>
+
+<td>${item.nama}</td>
+
+<td>${item.kategori}</td>
+
+<td>${item.harga}</td>
+
+<td>
+
+<button>Edit</button>
+
+<button>Hapus</button>
+
+</td>
+
+</tr>
+
+`;
+
+});
+
+document.getElementById("tabelData").innerHTML=html;
+
+}
+
+tampilData();
+
+</script>
 
 </body>
 </html>
