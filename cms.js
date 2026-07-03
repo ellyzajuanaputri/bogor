@@ -1,28 +1,34 @@
-const db = JSON.parse(localStorage.getItem("dataKuliner"));
+const db = JSON.parse(localStorage.getItem("dataKuliner")) || dataKuliner;
 
-function buatCard(item){
+function buatItem(item){
 
 return `
+<section class="item">
 
-<div class="card">
+<img src="${item.gambar}" alt="${item.nama}">
 
-<img src="${item.gambar}">
+<div class="item-info">
 
-<h3>${item.nama}</h3>
+<h2>${item.nama}</h2>
 
 <p>${item.deskripsi}</p>
 
-<p><b>${item.harga}</b></p>
+<p><b>💸 Harga :</b> ${item.harga}</p>
+
+<p><b>📍 Lokasi :</b> ${item.lokasi}</p>
+
+<p><b>🏷️ Kategori :</b> ${item.kategori}</p>
 
 </div>
 
+</section>
 `;
 
 }
 
-function tampilKategori(jenis,idContainer){
+function tampilKategori(jenis,id){
 
-const container=document.getElementById(idContainer);
+const container=document.getElementById(id);
 
 if(!container) return;
 
@@ -30,7 +36,7 @@ container.innerHTML="";
 
 db[jenis].forEach(item=>{
 
-container.innerHTML+=buatCard(item);
+container.innerHTML+=buatItem(item);
 
 });
 
