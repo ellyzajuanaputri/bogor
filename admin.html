@@ -313,7 +313,11 @@ function tampilData(keyword=""){
     
     <td>${item.kategori}</td>
     
-    <td>Rp${Number(item.harga || 0).toLocaleString("id-ID")}</td>
+    <td>${
+    item.harga && item.harga.toString().startsWith("Rp")
+    ? item.harga
+    : "Rp" + Number(item.harga || 0).toLocaleString("id-ID")
+    }</td>
     
     <td>
     
