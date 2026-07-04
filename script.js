@@ -39,17 +39,13 @@ function renderCard(data, container){
 
                 <p>${item.deskripsi}</p>
 
-                <a
+                <button
                 class="detailBtn"
-                href="${
-                db.makanan.some(x=>x.id==item.id)
-                ?
-                "makanan-khas.html"
-                :
-                "minuman-khas.html"
-                }">
+                onclick="location.href='detail.html?id=${item.id}'">
+                
                 Lihat Detail
-                </a>
+                
+                </button>
 
             </div>
         `;
