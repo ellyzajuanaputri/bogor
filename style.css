@@ -48,22 +48,33 @@ body {
   color: var(--green-main);
 }
 
-.navbar a {
-  margin-left: 30px;
-  font-weight: 500;
+.navbar a{
+    text-decoration:none;
+    color:#444;
+    font-weight:600;
+    padding:10px 16px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    background:#EAF4EA;
+    color:#7FB77E;
 }
 
 .adminBtn{
-    background:#7FB77E;
-    color:white;
-    padding:10px 18px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-left:30px;
+background:#7FB77E;
+color:white !important;
+padding:12px 20px;
+border-radius:12px;
+font-weight:bold;
+margin-left:20px;
+box-shadow:0 5px 15px rgba(127,183,126,.25);
 }
 
 .adminBtn:hover{
-    background:#6aa96a;
+background:#6aa96a;
+transform:translateY(-2px);
 }
 
 /* HERO */
