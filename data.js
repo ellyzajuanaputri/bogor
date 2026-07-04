@@ -86,6 +86,15 @@ const dataKuliner = {
     lokasi:"Bogor",
     deskripsi:"Kue lapis khas Bogor.",
     gambar:"assets/lapisbogor.jpg"
+    },
+     {
+    id:"roti unyil",
+    nama:"Roti Unyil",
+    harga:"Rp25.000",
+    kategori:"rekomendasi",
+    lokasi:"Bogor",
+    deskripsi:"kuliner ikonik legendaris.",
+    gambar:"assets/roti unyil.jpg"
     }
   ]
 };
