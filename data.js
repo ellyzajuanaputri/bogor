@@ -58,6 +58,18 @@ const dataKuliner = {
       kategori: "rekomendasi"
     }
   ]
+
+  oleholeh:[
+    {
+    id:"lapis",
+    nama:"Lapis Bogor",
+    harga:"Rp35.000",
+    kategori:"rekomendasi",
+    lokasi:"Bogor",
+    deskripsi:"Kue lapis khas Bogor.",
+    gambar:"assets/lapisbogor.jpg"
+    }
+  ]
 };
 
 // Membuat database pertama kali
