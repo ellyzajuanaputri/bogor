@@ -270,9 +270,10 @@ function logout(){
 
 function tampilData(keyword=""){
 
-    let semua = [
-        ...(db.makanan || []),
-        ...(db.minuman || [])
+    let semua=[
+    ...db.makanan,
+    ...db.minuman,
+    ...(db.oleholeh || [])
     ];
 
     if(keyword!=""){
@@ -360,6 +361,7 @@ function hapusData(id){
 
     db.makanan = (db.makanan || []).filter(item => item.id !== id);
     db.minuman = (db.minuman || []).filter(item => item.id !== id);
+    db.oleholeh = (db.oleholeh || []).filter(item=>item.id!==id);
 
     localStorage.setItem(
         "dataKuliner",
