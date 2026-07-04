@@ -181,23 +181,31 @@ JSON.parse(JSON.stringify(dataKuliner));
 const id=
 new URLSearchParams(location.search).get("id");
 
-let item=db.makanan.find(x=>x.id===id);
+let item = db.makanan.find(x => x.id === id);
 
-let jenis="makanan";
+let jenis = "makanan";
 
 if(!item){
 
-item=db.minuman.find(x=>x.id===id);
+    item = db.minuman.find(x => x.id === id);
 
-jenis="minuman";
+    jenis = "minuman";
 
 }
 
 if(!item){
 
-alert("Data tidak ditemukan");
+    item = (db.oleholeh || []).find(x => x.id === id);
 
-location.href="admin.html";
+    jenis = "oleholeh";
+
+}
+
+if(!item){
+
+    alert("Data tidak ditemukan");
+
+    location.href="admin.html";
 
 }
 
