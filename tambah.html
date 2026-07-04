@@ -111,6 +111,7 @@ color:white;
 <select id="jenis">
 <option value="makanan">Makanan</option>
 <option value="minuman">Minuman</option>
+<option value="oleholeh">Oleh-Oleh</option>
 </select>
 </div>
 
@@ -194,9 +195,15 @@ if(jenis=="makanan"){
 
 db.makanan.push(data);
 
-}else{
+}
+else if(jenis=="minuman"){
 
 db.minuman.push(data);
+
+}
+else{
+
+db.oleholeh.push(data);
 
 }
 
