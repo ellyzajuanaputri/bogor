@@ -136,8 +136,10 @@ color:white;
 </div>
 
 <div class="form-group">
-<label>Gambar</label>
-<input id="gambar">
+<label>Nama File Gambar</label>
+<input
+id="gambar"
+placeholder="contoh: asinanbogor.jpg">
 </div>
 
 <div class="button-group">
@@ -172,7 +174,9 @@ location.href="admin-login.html";
 
 }
 
-const db=JSON.parse(localStorage.getItem("dataKuliner"));
+const db =
+JSON.parse(localStorage.getItem("dataKuliner")) ||
+JSON.parse(JSON.stringify(dataKuliner));
 
 const id=
 new URLSearchParams(location.search).get("id");
@@ -198,7 +202,8 @@ location.href="admin.html";
 }
 
 document.getElementById("nama").value=item.nama;
-document.getElementById("harga").value=item.harga;
+document.getElementById("harga").value =
+String(item.harga).replace(/[^\d]/g,"");
 document.getElementById("kategori").value=item.kategori;
 document.getElementById("lokasi").value=item.lokasi;
 document.getElementById("deskripsi").value=item.deskripsi;
@@ -208,11 +213,18 @@ item.gambar.replace("assets/","");
 
 function updateData(){
 
+if(document.getElementById("nama").value.trim()==""){
+    alert("Nama wajib diisi");
+    return;
+}
+  
 item.nama=
 document.getElementById("nama").value;
 
-item.harga=
-document.getElementById("harga").value;
+item.harga =
+Number(
+document.getElementById("harga").value.replace(/\D/g,"")
+);
 
 item.kategori=
 document.getElementById("kategori").value;
