@@ -323,3 +323,34 @@ color:#7FB77E;
 footer p{
 margin:6px 0;
 }
+
+
+.card-body{
+    padding:18px;
+}
+
+.badge{
+    display:inline-block;
+    background:#7FB77E;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.detailBtn{
+    margin-top:10px;
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#7FB77E;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.detailBtn:hover{
+    background:#6aa96a;
+}
