@@ -314,7 +314,7 @@ function tampilData(keyword=""){
     <td>${item.kategori}</td>
     
     <td>${
-    item.harga && item.harga.toString().startsWith("Rp")
+    String(item.harga).startsWith("Rp")
     ? item.harga
     : "Rp" + Number(item.harga || 0).toLocaleString("id-ID")
     }</td>
