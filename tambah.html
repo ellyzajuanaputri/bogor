@@ -167,7 +167,7 @@ id:Date.now().toString(),
 
 nama:document.getElementById("nama").value,
 
-harga:document.getElementById("harga").value,
+harga: Number(document.getElementById("harga").value.replace(/\D/g,"")),
 
 kategori:document.getElementById("kategori").value,
 
