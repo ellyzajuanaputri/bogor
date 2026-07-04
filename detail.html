@@ -7,6 +7,57 @@
 
 <style>
 
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 70px;
+    background:white;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.navbar h2{
+    color:#7FB77E;
+    font-size:28px;
+}
+
+.navbar nav{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#444;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#7FB77E;
+}
+
+.adminBtn{
+    background:#7FB77E;
+    color:white !important;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(127,183,126,.25);
+}
+
+.adminBtn:hover{
+    background:#6aa96a;
+    color:white !important;
+}
+
 body{
     margin:0;
     background:#f4f6f9;
@@ -15,7 +66,7 @@ body{
 
 .container{
     max-width:1000px;
-    margin:50px auto;
+    margin:60px auto;
     background:white;
     border-radius:18px;
     overflow:hidden;
@@ -83,6 +134,28 @@ button:hover{
 
 <body>
 
+<header class="navbar">
+
+<h2>Bogor Bites</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="makanan-khas.html">Makanan</a>
+
+<a href="minuman-khas.html">Minuman</a>
+
+<a href="oleh-oleh.html">Oleh Oleh</a>
+
+<a href="admin-login.html" class="adminBtn">
+Admin Login
+</a>
+
+</nav>
+
+</header>
+
 <div class="container">
 
 <img id="gambar">
@@ -128,7 +201,8 @@ new URLSearchParams(location.search).get("id");
 
 const semua = [
     ...db.makanan,
-    ...db.minuman
+    ...db.minuman,
+    ...(db.oleholeh || [])
 ];
 
 const item =
