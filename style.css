@@ -314,3 +314,12 @@ footer {
 .heroButton a:hover{
     transform:translateY(-3px);
 }
+
+footer h3{
+margin-bottom:10px;
+color:#7FB77E;
+}
+
+footer p{
+margin:6px 0;
+}
