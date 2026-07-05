@@ -53,6 +53,7 @@ const dataKuliner = {
       gambar: "assets/combro.jpg",
       kategori: "⭐ Rekomendasi"
     },
+    {
       id: "laksa",
       nama: "Laksa Gang Aut",
       deskripsi: " Laksa khas Bogor berkuah santan kuning dengan mie, tauge, oncom, telur rebus, dan daun kemangi yang harum.",
@@ -60,6 +61,7 @@ const dataKuliner = {
       harga: "Rp20.000–Rp30.000",
       gambar: "assets/laksa.jpg",
       kategori: "⭐ Rekomendasi"
+    }
   ],
 
   minuman: [
