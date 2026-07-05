@@ -86,7 +86,7 @@ const dataKuliner = {
       deskripsi: "Mie dengan kuah kaldu sapi yang gurih, disajikan bersama kikil, bakso, dan taburan bawang goreng.",
       lokasi: "Bogor Tengah",
       harga: "Rp20.000–Rp35.000",
-      gambar: "assets/kocok_bogor.jpg",
+      gambar: "assets/",
       kategori: "⭐ Rekomendasi"
     },
     {
@@ -95,7 +95,7 @@ const dataKuliner = {
       deskripsi: "Nasi hangat yang dicampur oncom berbumbu dan disajikan dengan ayam goreng, tahu, tempe, serta sambal.",
       lokasi: "Bogor dan sekitarnya",
       harga: "Rp20.000–Rp35.000",
-      gambar: "assets/tutug.jpg",
+      gambar: "assets/",
       kategori: "⭐ Rekomendasi"
     },
     {
@@ -104,7 +104,7 @@ const dataKuliner = {
       deskripsi: "Bakso khas Bogor yang dipadukan dengan potongan ketupat dalam kuah kaldu gurih.",
       lokasi: "Bogor Tengah",
       harga: "Rp20.000–Rp35.000",
-      gambar: "assets/bapatong.jpg",
+      gambar: "assets/",
       kategori: "⭐ Rekomendasi"
     },
     {
@@ -113,7 +113,7 @@ const dataKuliner = {
       deskripsi: "Mie ayam legendaris dengan topping ayam gurih dan bakso yang menjadi favorit warga Bogor.",
       lokasi: "Jl. Suryakencana, Bogor",
       harga: "Rp20.000–Rp35.000",
-      gambar: "assets/kocok_bogor.jpg",
+      gambar: "assets/",
       kategori: "⭐ Rekomendasi"
     },
     {
@@ -122,7 +122,7 @@ const dataKuliner = {
       deskripsi: "Sate berbahan sumsum sapi dengan tekstur lembut dan cita rasa gurih yang unik.",
       lokasi: "Bogor Timur",
       harga: "Rp35.000–Rp50.000",
-      gambar: "assets/sate_sumsum.jpg",
+      gambar: "assets/",
       kategori: "🔥 Viral"
     },
     {
@@ -131,7 +131,7 @@ const dataKuliner = {
       deskripsi: "Perpaduan nasi uduk dengan bistik sapi, kentang, dan saus khas yang banyak dijumpai di Bogor.",
       lokasi: "Bogor Tengah",
       harga: "Rp25.000–Rp40.000",
-      gambar: "assets/uduk.jpg",
+      gambar: "assets/",
       kategori: "⭐ Rekomendasi"
     }
   ],
