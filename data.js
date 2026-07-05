@@ -133,7 +133,7 @@ const dataKuliner = {
       harga: "Rp25.000–Rp40.000",
       gambar: "assets/uduk.jpg",
       kategori: "⭐ Rekomendasi"
-    },
+    }
   ],
 
   minuman: [
