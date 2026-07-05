@@ -39,7 +39,7 @@ const dataKuliner = {
     {
       id: "cungkring",
       nama: "Cungkring",
-      deskripsi: " kuliner berupa potongan kikil dan bagian kepala sapi (seperti cungur atau bibir) yang dimasak empuk, disajikan bersama irisan lontong dan rempeyek atau keripik tempe, lalu disiram saus kacang yang gurih serta kecap manis.",
+      deskripsi: " Kuliner berupa potongan kikil dan bagian kepala sapi (seperti cungur atau bibir) yang dimasak empuk, disajikan bersama irisan lontong dan rempeyek atau keripik tempe, lalu disiram saus kacang yang gurih serta kecap manis.",
       lokasi: "Bogor Tengah",
       harga: "Rp35.000",
       gambar: "assets/cungkring.jpg",
@@ -48,7 +48,7 @@ const dataKuliner = {
     {
       id: "combro",
       nama: "Combro",
-      deskripsi: " gorengan tradisional khas Sunda, Jawa Barat, yang terbuat dari parutan singkong dengan isian sambal oncom gurih dan pedas.",
+      deskripsi: " Gorengan tradisional khas Sunda, Jawa Barat, yang terbuat dari parutan singkong dengan isian sambal oncom gurih dan pedas.",
       harga: "Rp5.000",
       gambar: "assets/combro.jpg",
       kategori: "⭐ Rekomendasi"
