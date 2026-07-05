@@ -5,9 +5,9 @@ const dataKuliner = {
       nama: "Asinan Bogor",
       deskripsi: "Jajanan segar dengan rasa asam, manis, dan pedas.",
       lokasi: "Jl. Suryakencana",
-      harga: "Rp10.000 – Rp20.000",
+      harga: "Rp10.000–Rp20.000",
       gambar: "assets/asinanbogor.jpg",
-      kategori: "viral"
+      kategori: "🔥 Viral"
     },
     {
       id: "toge",
@@ -16,7 +16,7 @@ const dataKuliner = {
       lokasi: "Bogor Tengah",
       harga: "Rp15.000",
       gambar: "assets/toge-goreng-bogor.jpg",
-      kategori: "rekomendasi"
+      kategori: "⭐ Rekomendasi"
     },
     {
       id: "doclang",
@@ -25,16 +25,16 @@ const dataKuliner = {
       lokasi: "Jl. Raya Bogor",
       harga: "Rp12.000",
       gambar: "assets/doclang.jpg",
-      kategori: "rekomendasi"
+      kategori: "⭐ Rekomendasi"
     },
     {
       id: "soto",
-      nama: "Soto Mie Bogor",
-      deskripsi: "Soto dengan mie, risol, kikil, dan kuah gurih.",
-      lokasi: "Bogor Tengah",
-      harga: "Rp25.000",
+      nama: "Soto Mie Agih",
+      deskripsi: "Soto mie khas Bogor dengan kuah kaldu gurih, daging sapi, risol, mie kuning, bihun, dan taburan seledri yang kaya rasa.",
+      lokasi: "Jl. Suryakencana, Bogor Tengah",
+      harga: "Rp25.000–Rp35.000",
       gambar: "assets/sotomiebogor.jpg",
-      kategori: "rekomendasi"
+      kategori: "🔥 Viral"
     },
     {
       id: "cungkring",
@@ -43,7 +43,7 @@ const dataKuliner = {
       lokasi: "Bogor Tengah",
       harga: "Rp35.000",
       gambar: "assets/cungkring.jpg",
-      kategori: "rekomendasi"
+      kategori: "⭐ Rekomendasi"
     },
     {
       id: "combro",
@@ -51,8 +51,15 @@ const dataKuliner = {
       deskripsi: " gorengan tradisional khas Sunda, Jawa Barat, yang terbuat dari parutan singkong dengan isian sambal oncom gurih dan pedas.",
       harga: "Rp5.000",
       gambar: "assets/combro.jpg",
-      kategori: "rekomendasi"
-    }
+      kategori: "⭐ Rekomendasi"
+    },
+      id: "laksa",
+      nama: "Laksa Gang Aut",
+      deskripsi: " Laksa khas Bogor berkuah santan kuning dengan mie, tauge, oncom, telur rebus, dan daun kemangi yang harum.",
+      lokasi: "Gang Aut, Bogor Tengah",
+      harga: "Rp20.000–Rp30.000",
+      gambar: "assets/combro.jpg",
+      kategori: "⭐ Rekomendasi"
   ],
 
   minuman: [
