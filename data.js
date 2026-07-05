@@ -59,7 +59,7 @@ const dataKuliner = {
       deskripsi: " Laksa khas Bogor berkuah santan kuning dengan mie, tauge, oncom, telur rebus, dan daun kemangi yang harum.",
       lokasi: "Gang Aut, Bogor Tengah",
       harga: "Rp20.000–Rp30.000",
-      gambar: "assets/laksa.jpg",
+      gambar: "assets/laksa.jpeg",
       kategori: "⭐ Rekomendasi"
     }
   ],
