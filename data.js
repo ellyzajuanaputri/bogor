@@ -56,12 +56,84 @@ const dataKuliner = {
     {
       id: "laksa",
       nama: "Laksa Gang Aut",
-      deskripsi: " Laksa khas Bogor berkuah santan kuning dengan mie, tauge, oncom, telur rebus, dan daun kemangi yang harum.",
+      deskripsi: "Laksa khas Bogor berkuah santan kuning dengan mie, tauge, oncom, telur rebus, dan daun kemangi yang harum.",
       lokasi: "Gang Aut, Bogor Tengah",
       harga: "Rp20.000–Rp30.000",
       gambar: "assets/laksa.jpeg",
       kategori: "⭐ Rekomendasi"
-    }
+    },
+    {
+      id: "glosor",
+      nama: "Mie Glosor",
+      deskripsi: "Mie kuning khas Bogor dengan tekstur kenyal, biasanya disajikan dengan sambal, gorengan, atau lauk sederhana.",
+      lokasi: "Pasar Anyar Bogor",
+      harga: "Rp10.000–Rp18.000",
+      gambar: "assets/glosor.jpg",
+      kategori: "⭐ Rekomendasi"
+    },
+    {
+      id: "kuning",
+      nama: "Soto Kuning Bogor",
+      deskripsi: "Soto khas Bogor dengan kuah kuning berbumbu rempah, berisi daging sapi, babat, paru, atau kikil sesuai pilihan.",
+      lokasi: "Jl. Suryakencana, Bogor",
+      harga: "Rp30.000–Rp50.000",
+      gambar: "assets/soto_kuning.jpg",
+      kategori: "🔥 Viral"
+    },
+    {
+      id: "kocok",
+      nama: "Mie Kocok Bogor",
+      deskripsi: "Mie dengan kuah kaldu sapi yang gurih, disajikan bersama kikil, bakso, dan taburan bawang goreng.",
+      lokasi: "Bogor Tengah",
+      harga: "Rp20.000–Rp35.000",
+      gambar: "assets/kocok_bogor.jpg",
+      kategori: "⭐ Rekomendasi"
+    },
+    {
+      id: "tutug",
+      nama: "Nasi Tutug Oncom",
+      deskripsi: "Nasi hangat yang dicampur oncom berbumbu dan disajikan dengan ayam goreng, tahu, tempe, serta sambal.",
+      lokasi: "Bogor dan sekitarnya",
+      harga: "Rp20.000–Rp35.000",
+      gambar: "assets/tutug.jpg",
+      kategori: "⭐ Rekomendasi"
+    },
+    {
+      id: "bapatong",
+      nama: "Bapatong",
+      deskripsi: "Bakso khas Bogor yang dipadukan dengan potongan ketupat dalam kuah kaldu gurih.",
+      lokasi: "Bogor Tengah",
+      harga: "Rp20.000–Rp35.000",
+      gambar: "assets/bapatong.jpg",
+      kategori: "⭐ Rekomendasi"
+    },
+    {
+      id: "bakso",
+      nama: "Mie Ayam Bakso Apollo",
+      deskripsi: "Mie ayam legendaris dengan topping ayam gurih dan bakso yang menjadi favorit warga Bogor.",
+      lokasi: "Jl. Suryakencana, Bogor",
+      harga: "Rp20.000–Rp35.000",
+      gambar: "assets/kocok_bogor.jpg",
+      kategori: "⭐ Rekomendasi"
+    },
+    {
+      id: "sate",
+      nama: "Sate Sumsum",
+      deskripsi: "Sate berbahan sumsum sapi dengan tekstur lembut dan cita rasa gurih yang unik.",
+      lokasi: "Bogor Timur",
+      harga: "Rp35.000–Rp50.000",
+      gambar: "assets/sate_sumsum.jpg",
+      kategori: "🔥 Viral"
+    },
+    {
+      id: "uduk",
+      nama: "Nasi Uduk Bistik",
+      deskripsi: "Perpaduan nasi uduk dengan bistik sapi, kentang, dan saus khas yang banyak dijumpai di Bogor.",
+      lokasi: "Bogor Tengah",
+      harga: "Rp25.000–Rp40.000",
+      gambar: "assets/uduk.jpg",
+      kategori: "⭐ Rekomendasi"
+    },
   ],
 
   minuman: [
