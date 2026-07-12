@@ -2,85 +2,160 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Admin</title>
-    <link rel="stylesheet" href="style.css">
 
     <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f7fb;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
         .login-box{
-            width:350px;
-            margin:100px auto;
-            background:white;
+            width:380px;
+            background:#fff;
             padding:30px;
             border-radius:15px;
             box-shadow:0 5px 20px rgba(0,0,0,.15);
         }
 
+        .login-box h2{
+            text-align:center;
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        .info-login{
+            background:#eef8ee;
+            border-left:5px solid #7FB77E;
+            padding:12px;
+            border-radius:8px;
+            margin-bottom:20px;
+            color:#444;
+            font-size:14px;
+            line-height:1.6;
+        }
+
+        .info-login strong{
+            color:#2f6f3e;
+            display:block;
+            margin-bottom:5px;
+        }
+
         .login-box input{
             width:100%;
-            padding:10px;
-            margin:10px 0;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+        }
+
+        .login-box input:focus{
+            outline:none;
+            border-color:#7FB77E;
         }
 
         .login-box button{
             width:100%;
             padding:12px;
             border:none;
-            background:#7FB77E;
-            color:white;
-            cursor:pointer;
             border-radius:8px;
+            background:#7FB77E;
+            color:#fff;
+            font-size:16px;
+            cursor:pointer;
+            transition:.3s;
         }
 
-        .login-box h2{
+        .login-box button:hover{
+            background:#5f9f61;
+        }
+
+        .footer{
             text-align:center;
-            margin-bottom:20px;
+            margin-top:15px;
+            color:#888;
+            font-size:13px;
         }
     </style>
-
 </head>
+
 <body>
 
 <div class="login-box">
 
-<h2>Login Admin</h2>
+    <h2>🔐 Login Admin</h2>
 
-<input
-type="text"
-id="username"
-placeholder="Username">
+    <div class="info-login">
+        <strong>Informasi Login</strong>
+        👤 Username : <b>admin</b><br>
+        🔒 Password : <b>admin123</b>
+    </div>
 
-<input
-type="password"
-id="password"
-placeholder="Password">
+    <form id="formLogin">
 
-<button onclick="login()">
-Login
-</button>
+        <input
+            type="text"
+            id="usernameInput"
+            placeholder="Masukkan Username"
+            required>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Masukkan Password"
+            required>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <div class="footer">
+        Dashboard Admin Kuliner Bogor
+    </div>
 
 </div>
 
 <script>
 
-function login(){
+const USERNAME = "admin";
+const PASSWORD = "admin123";
 
-const username=document.getElementById("username").value;
+document.getElementById("formLogin").addEventListener("submit", function(e){
 
-const password=document.getElementById("password").value;
+    e.preventDefault();
 
-if(username=="admin" && password=="admin123"){
+    const username = document.getElementById("usernameInput").value.trim();
+    const password = document.getElementById("passwordInput").value;
 
-sessionStorage.setItem("login","true");
+    if(username === USERNAME && password === PASSWORD){
 
-location.href="admin.html";
+        sessionStorage.setItem("login","true");
 
-}else{
+        alert("Login berhasil!");
 
-alert("Username atau Password salah!");
+        window.location.href = "admin.html";
 
-}
+    }else{
 
-}
+        alert("Username atau Password salah!");
+
+    }
+
+});
 
 </script>
 
